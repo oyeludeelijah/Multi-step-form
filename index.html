@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Multi-step form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="sec1.css" />
+    <link rel="stylesheet" href="sec2.css" />
+    <link rel="stylesheet" href="sec3.css" />
+    <link rel="stylesheet" href="sec4.css" />
+    <link rel="stylesheet" href="sec5.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+<!-- 
+    <style>
+      .attribution {
+        font-size: 11px;~
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar start -->
+      <nav>
+        <div class="nav-1 nav-elms">
+          <div class="num-back" id="num-1">
+            <span class="number" id="number-1">1</span>
+          </div>
+          <div class="nav-text">
+            <span class="head">STEP 1</span> <br />
+            <span class="sub">Your info</span>
+          </div>
+        </div>
+
+        <div class="nav-2 nav-elms">
+          <div class="num-back" id="num-2">
+            <span class="number" id="number-2">2</span>
+          </div>
+          <div class="nav-text">
+            <span class="head">STEP 2</span> <br />
+            <span class="sub">Select plan</span>
+          </div>
+        </div>
+
+        <div class="nav-3 nav-elms">
+          <div class="num-back" id="num-3">
+            <span class="number" id="number-3">3</span>
+          </div>
+          <div class="nav-text">
+            <span class="head">STEP 3</span> <br />
+            <span class="sub">Add-ons</span>
+          </div>
+        </div>
+
+        <div class="nav-4 nav-elms">
+          <div class="num-back" id="num-4">
+            <span class="number" id="number-4">4</span>
+          </div>
+          <div class="nav-text">
+            <span class="head">STEP 4</span> <br />
+            <span class="sub">Summary</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PAGE 1 -->
+      <!-- PAGE 1 -->
+      <!-- PAGE 1 -->
+      <!-- PAGE 1 -->
+
+      <section class="section-1" id="section-1">
+        <div>
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <form action="" id="form1">
+            <label for="">
+              <span class="input-error-msgs">
+                <span class="input-head">Name</span>
+                <span id="name-error-msg"></span>
+              </span>
+              <input
+                id="name-input"
+                type="text"
+                placeholder="e.g. Stephen King"
+              />
+            </label>
+            <label for="">
+              <span class="input-error-msgs">
+                <span class="input-head">Email Address</span>
+                <span id="email-error-msg"></span>
+              </span>
+              <input
+                id="email-input"
+                type="text"
+                placeholder=" e.g. stephenking@lorem.com"
+              />
+            </label>
+            <label for="">
+              <span class="input-error-msgs">
+                <span class="input-head">Phone Number</span>
+                <span id="phone-error-msg"></span>
+              </span>
+              <input
+                id="phone-input"
+                type="tel"
+                placeholder="e.g. +1 234 567 890"
+              />
+            </label>
+        <div></div></div>
+          <div class="buttons">
+            <button type="submit" class="next-page" id="next-page1">
+              Next Step
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- PAGE 2 -->
+      <!-- PAGE 2 -->
+      <!-- PAGE 2 -->
+      <!-- PAGE 2 -->
+
+      <section class="section-2 hidden" id="section-2">
+        <div>
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+          <div class="payment-plans">
+            <div class="payment-plan-1" id="payment-plan-1">
+              <div class="payment-plan-content">
+                <img src="assets/images/icon-arcade.svg" alt="" />
+                <div class="content-head">
+                  <div>
+                    <span class="payment-head">Arcade</span> <br />
+                    <span class="payment-price" id="payment-price-1">$9/mo</span>
+                  </div>
+                  <span class="discount hidden" id="discount">2 months free</span>
+                </div>
+              </div>
+            </div>
+            <div class="payment-plan-2" id="payment-plan-2">
+              <div class="payment-plan-content">
+                <img src="assets/images/icon-advanced.svg" alt="" />
+                <div class="content-head">
+                  <div>
+                    <span class="payment-head">Advanced</span> <br />
+                    <span class="payment-price" id="payment-price-2">$12/mo</span>
+                  </div>
+                  <span class="discount hidden" id="discount">2 months free</span>
+                </div>
+              </div>
+            </div>
+            <div class="payment-plan-3" id="payment-plan-3">
+              <div class="payment-plan-content">
+                <img src="assets/images/icon-pro.svg" alt="" />
+                <div class="content-head">
+                  <div>
+                    <span class="payment-head">Pro</span> <br />
+                    <span class="payment-price" id="payment-price-3">$15/mo</span>
+                  </div>
+                  <span class="discount hidden" id="discount">2 months free</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="switch">
+            Monthly <input type="checkbox" id="toggleSwitch" /> Yearly
+          </div> -->
+          <div class="toggle-switch">
+            <span class="text-1" id="toggleStatus1">Monthly</span>
+            <label class="switch">
+              <input type="checkbox" id="toggleSwitch" />
+              <span class="slider round"></span>
+            </label>
+            <span class="text-2" id="toggleStatus2">Yearly</span>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="prev-page" id="prev-page2">Go Back</button>
+          <button class="next-page" id="next-page2">Next Step</button>
+        </div>
+      </section>
+
+      <!-- PAGE 3 -->
+      <!-- PAGE 3 -->
+      <!-- PAGE 3 -->
+      <!-- PAGE 3 -->
+
+      <section class="section-3 hidden" id="section-3">
+        <div>
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+          <div class="services">
+            <div class="service-1" id="service-1">
+              <div class="service-text">
+                <input type="checkbox" id="checkbox-1" />
+                <div>
+                  <span class="service-text-head">Online service</span> <br />
+                  <span class="service-text-p">Access to multiplayer games</span>
+                </div>
+              </div>
+              <div class="price" id="service-price-1">+$1/mo</div>
+            </div>
+            <div class="service-2" id="service-2">
+              <div class="service-text">
+                <input type="checkbox" id="checkbox-2" />
+                <div>
+                  <span class="service-text-head">Larger storage</span> <br />
+                  <span class="service-text-p">Extra 1TB of cloud save</span>
+                </div>
+              </div>
+              <div class="price" id="service-price-2">+$2/mo</div>
+            </div>
+            <div class="service-3" id="service-3">
+              <div class="service-text">
+                <input type="checkbox" id="checkbox-3" />
+                <div>
+                  <span class="service-text-head">Customizable Profile</span>
+                  <br />
+                  <span class="service-text-p">
+                    Custom theme on your profile</span
+                  >
+                </div>
+              </div>
+              <div class="price" id="service-price-3">+$2/mo</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="prev-page" id="prev-page3">Go Back</button>
+          <button class="next-page" id="next-page3">Next Step</button>
+        </div>
+      </section>
+
+      <!-- PAGE 4 -->
+      <!-- PAGE 4 -->
+      <!-- PAGE 4 -->
+      <!-- PAGE 4 -->
+
+      <section class="section-4 hidden" id="section-4">
+        <div>
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+          <div class="cumulative">
+            <div class="cumulative-head">
+              <div>
+                <span class="cumulative-text-head"
+                  >Arcade (<span id="duration">Monthly</span>)</span
+                ><br />
+                <a href="#" id="change-plan-duration">Change</a>
+              </div>
+              <span class="arcade-cost" id="arcade-duration-cost">$9/mo</span>
+            </div>
+            <hr />
+            <!-- 1 -->
+            <!-- 1 -->
+            <!-- 1 -->
+            <div id="service-cost-1" class="services-cost service-cost-1 hidden">
+              <span class="service-name" id="Online-service-name"
+                >Online service</span
+              >
+              <span class="service-cost" id="online-service-cost"></span>
+            </div>
+            <!-- 2 -->
+            <!-- 2 -->
+            <!-- 2 -->
+            <div id="service-cost-2" class="services-cost hidden">
+              <span class="service-name" id="larger-storage-name"
+                >Larger storage</span
+              >
+              <span class="service-cost" id="larger-storage-cost"></span>
+            </div>
+            <!-- 3 -->
+            <!-- 3 -->
+            <!-- 3 -->
+            <div id="service-cost-3" class="services-cost hidden">
+              <span class="service-name" id="larger-storage-name"
+                >Customizable profile
+              </span>
+              <span class="service-cost" id="customizable-profile-cost"></span>
+            </div>
+          </div>
+          <div class="total-cost">
+            <span class="total-cost-head"
+              >Total (<span id="total-duration">per month</span>)</span
+            >
+            <span class="total-cost-value" id="total-cost-value">+$12/mo</span>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="prev-page" id="prev-page4">Go Back</button>
+          <!-- <button class="next-page" id="next-page">Next Step</button> -->
+          <button class="confirm" id="confirm">Confirm</button>
+        </div>
+      </section>
+
+      <!-- PAGE 5 -->
+      <!-- PAGE 5 -->
+      <!-- PAGE 5 -->
+      <!-- PAGE 5 -->
+      <section class="section-5 hidden" id="section-5">
+        <div class="sec-5-icon">
+          <img src="assets/images/icon-thank-you.svg" alt="" />
+        </div>
+        <div class="sec-5-text">
+          <h1>Thank you!</h1>
+          <p>
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.section-1 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.section-1 p {
+  color: var(--Cool-gray);
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-1 input {
+  padding: 0.7rem;
+  width: 100%;
+  border: 0.2px solid hsl(231, 11%, 63%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.section-1 input:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.section-1 input:focus {
+  border: 1px solid hsl(243, 100%, 62%);
+  outline: none;
+}
+
+.input-head {
+  margin-bottom: 0.5rem;
+}
+
+label {
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}
+
+.next-page {
+  border: none;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.7rem;
+  /* right: 20px; */
+  /* bottom: 20px; */
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  margin-left: auto;
+}
+
+.next-page:hover {
+  background-color: var(--Marine-blue-shade);
+}
+
+.prev-page {
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--White);
+  padding: 1rem 1.5rem;
+  /* color: var(--White); */
+  /* position: absolute;
+  left: 20px;
+  bottom: 20px; */
+  color: var(--Cool-gray);
+  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+.prev-page:hover {
+  color: var(--Marine-blue);
+  font-weight: 500;
+}
+
+.input-error-msgs {
+  display: flex;
+  justify-content: space-between;
+}
+
+#name-error-msg,
+#email-error-msg,
+#phone-error-msg {
+  color: var(--Strawberry-red);
+  font-weight: 600;
+}
+
+@media screen and (max-width: 468px) {
+  .section-1 p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .section-1 input {
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+  }
+
+  .input-head {
+    font-size: 1.4rem;
+  }
+}

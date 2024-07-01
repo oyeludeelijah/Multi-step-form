@@ -1,0 +1,113 @@
+.section-4 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.section-4 p {
+  color: var(--Cool-gray);
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cumulative {
+  background-color: var(--Pastel-blue-shade);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cumulative-text-head {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.cumulative-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.arcade-cost {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.cumulative-head a {
+  cursor: pointer;
+}
+
+.cumulative-head a:hover {
+  color: var(--Purplish-blue);
+}
+
+.section-4 hr {
+  margin-bottom: 1.5rem;
+  border: 1px solid #0000000c;
+}
+
+.services-cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.service-name {
+  color: var(--Cool-gray);
+}
+
+.service-cost {
+  font-weight: 500;
+}
+
+.total-cost {
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.total-cost-head {
+  color: var(--Cool-gray);
+}
+
+.total-cost-value {
+  color: var(--Purplish-blue);
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.confirm {
+  background-color: var(--Purplish-blue);
+  border: none;
+  color: var(--White);
+  font-size: 1.2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.7rem;
+  /* position: absolute;
+  right: 20px;
+  bottom: 20px; */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.confirm:hover {
+  background-color: var(--Purplish-blue-shade);
+}
+
+@media screen and (max-width: 468px) {
+  .cumulative-text-head {
+  }
+
+  .section-4 p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .arcade-cost,
+  .service-cost {
+    font-size: 1.4rem;
+  }
+}

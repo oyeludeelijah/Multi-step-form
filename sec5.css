@@ -1,0 +1,46 @@
+.section-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-5 h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-5 p {
+  color: var(--Cool-gray);
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.section-5 img {
+  margin-bottom: 2rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+@media screen and (max-width: 468px) {
+  .section-5 {
+    padding-bottom: 2rem;
+  }
+
+  .section-5 img {
+    margin-bottom: 0rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .section-5 h1 {
+    font-size: 3rem;
+  }
+
+  .section-5 p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
