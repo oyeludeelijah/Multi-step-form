@@ -30,8 +30,7 @@ html {
 
 body {
   background-color: var(--Magnolia);
-
-  height: 100vh;
+  min-height: 100vh; /* Changed to min-height for better mobile fit */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,14 +42,11 @@ body {
   background-color: var(--White);
   padding: 1rem;
   border-radius: 1rem;
-
   display: flex;
-  gap: 5rem;
-
+  gap: 2rem; /* Reduced for better responsiveness */
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
-  /* width: 70%; */
   max-width: 64rem;
-  /* min-width: 48.7rem; */
+  width: 100%; /* Make it responsive by default */
 }
 
 .hidden {
@@ -70,23 +66,23 @@ section {
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-  /* height: 100%; */
   padding: 2.5rem;
   padding-bottom: 1rem;
   position: relative;
-
-  max-width: 38rem;
-  /* background-color: brown; */
+  width: 38rem;
+  z-index: 2; /* Ensures section goes over nav */
 }
 
 nav {
   background: url(assets/images/bg-sidebar-desktop.svg) no-repeat center center;
   background-size: cover;
   width: 18rem;
-  height: 38rem;
+  height: 76rem; /* Double the original height */
   border-radius: 0.7rem;
   padding: 2rem;
   padding-top: 2.5rem;
+  position: relative; /* Keeps nav positioning intact */
+  z-index: 1;
 }
 .nav-elms {
   display: flex;
@@ -100,7 +96,6 @@ nav {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 1.25rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,12 +126,10 @@ nav {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 480px) {
   body {
-    /* background-color: aqua; */
     align-items: flex-start;
     padding: 0;
-    /* justify-content: flex-start; */
   }
 
   .container {
@@ -144,36 +137,30 @@ nav {
     width: 100%;
     padding: 0;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--Magnolia);
   }
 
   section {
-    width: 90%;
+    max-width: 90%; /* Adjusted width for mobile */
     background-color: var(--White);
     border-radius: 1rem;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto; /* Centered with auto margins */
+    padding: 2rem; /* Adjusted for spacing */
   }
 
   .buttons {
-    /* position: absolute; */
-
-    /* background-color: aqua; */
     width: 100%;
     font-size: 1.4rem;
   }
 
   nav {
     background: url(assets/images/bg-sidebar-mobile.svg) no-repeat center center;
-    /* background: none; */
-    /* background-color: brown; */
+    background-size: cover;
     width: 100%;
-    /* height: 11.5rem; */
-    height: 20%;
+    height: 15rem; /* Double the height for mobile */
+    padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
