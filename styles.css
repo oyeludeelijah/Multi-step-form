@@ -69,21 +69,20 @@ section {
   padding: 2.5rem;
   padding-bottom: 1rem;
   position: relative;
-  width: 38rem;
-  z-index: 2; /* Ensures section goes over nav */
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 38rem;
 }
 
 nav {
   background: url(assets/images/bg-sidebar-desktop.svg) no-repeat center center;
   background-size: cover;
   width: 18rem;
-  height: 76rem; /* Double the original height */
+  height: 38rem;
   border-radius: 0.7rem;
   padding: 2rem;
   padding-top: 2.5rem;
-  position: relative; /* Keeps nav positioning intact */
-  z-index: 1;
 }
+
 .nav-elms {
   display: flex;
   align-items: center;
@@ -159,7 +158,7 @@ nav {
     background: url(assets/images/bg-sidebar-mobile.svg) no-repeat center center;
     background-size: cover;
     width: 100%;
-    height: 15rem; /* Double the height for mobile */
+    height: 15rem;
     padding: 1rem;
     display: flex;
     justify-content: center;
@@ -167,7 +166,6 @@ nav {
     gap: 2rem;
     border-radius: 0;
   }
-
   .nav-text {
     display: none;
   }
